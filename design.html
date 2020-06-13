@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <title>Farming</title>
@@ -11,7 +12,7 @@ padding: 20px;
 margin-left:20px;
 }
 body, html {
-height: 100%;
+  height: 100%;
 }
 #bg
 {
@@ -23,25 +24,25 @@ margin-left:20px;
 font: small-caps bold 50px/1 sans-serif;
 text-align:center;
 width: 100%;
-background-color: #4CAF50;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #ss
 {
-text-align:center;
-width: 100%;
-background-color: #4CAF50;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+  text-align:center;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 #jp
 {
@@ -68,41 +69,41 @@ margin-right:80px;
 margin-left:20px;
 }
 input[type=text], select {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 input[type=number], select {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input[type=submit] {
-width: 100%;
-background-color: #4CAF50;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $(document.getElementById("full")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/1.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter Full Name');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -111,8 +112,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("relative")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/2.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter Relative Name');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -121,8 +122,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("mobile")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/3.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your mobile number');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -131,8 +132,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("age")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/4.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your age');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -141,8 +142,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("caste")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/5.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your caste');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -151,8 +152,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("gender")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/6.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your gender');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -161,8 +162,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("type")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/7.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter Farmer Type');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -171,8 +172,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("state")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/8.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your state');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -181,8 +182,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("district")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/9.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your District');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -191,8 +192,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("village")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/10.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your village');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -201,8 +202,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("pin")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/11.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter pincode');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -211,8 +212,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("ifsc")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/14.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter IFSC code');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -221,8 +222,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("acnumber")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/12.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter Your account number');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
@@ -231,8 +232,8 @@ audio.play();
 <script>
 $(document).ready(function(){
   $(document.getElementById("bankname")).hover(function(){
-    var audio=new Audio('file:///C:/Users/pratham/Downloads/13.mp3');
-audio.play();
+    var msg = new SpeechSynthesisUtterance('Enter your bank name');
+    window.speechSynthesis.speak(msg);
     }, function(){
     $(this).css("color", "green");
   });
