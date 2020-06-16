@@ -1,315 +1,327 @@
-
 <html>
-<head>
-<title>Farming</title>
-<style>
-form
-{
-margin-right:600px;
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
-margin-left:20px;
-}
-body, html {
-  height: 100%;
-}
-#bg
-{
-margin-right:60px;
-margin-left:20px;
-}
-#sa
-{
-font: small-caps bold 50px/1 sans-serif;
-text-align:center;
-width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#ss
-{
-  text-align:center;
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#jp
-{
-text-align:center;
-}
-h2
-{
-font: italic small-caps bold 26px/2 cursive;
-}
-h3
-{
-font: italic small-caps bold 16px/2 cursive;
-}
-h4
-{
-font: italic small-caps bold 12px/2 cursive;
-}
-#govt
-{
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
-margin-right:80px;
-margin-left:20px;
-}
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=number], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("full")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter Full Name');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("relative")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter Relative Name');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("mobile")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your mobile number');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("age")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your age');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("caste")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your caste');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("gender")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your gender');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("type")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter Farmer Type');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("state")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your state');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("district")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your District');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("village")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your village');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("pin")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter pincode');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("ifsc")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter IFSC code');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("acnumber")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter Your account number');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(document.getElementById("bankname")).hover(function(){
-    var msg = new SpeechSynthesisUtterance('Enter your bank name');
-    window.speechSynthesis.speak(msg);
-    }, function(){
-    $(this).css("color", "green");
-  });
-});
-</script>
+<head>
+  <title>Farming</title>
+  <style>
+    form {
+      margin-right: 600px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-left: 20px;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    #bg {
+      margin-right: 60px;
+      margin-left: 20px;
+    }
+
+    #sa {
+      font: small-caps bold 50px/1 sans-serif;
+      text-align: center;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #ss {
+      text-align: center;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #jp {
+      text-align: center;
+    }
+
+    h2 {
+      font: italic small-caps bold 26px/2 cursive;
+    }
+
+    h3 {
+      font: italic small-caps bold 16px/2 cursive;
+    }
+
+    h4 {
+      font: italic small-caps bold 12px/2 cursive;
+    }
+
+    #govt {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-right: 80px;
+      margin-left: 20px;
+    }
+
+    input[type=text],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=number],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("full")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter Full Name');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("relative")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter Relative Name');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("mobile")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your mobile number');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("age")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your age');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("caste")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your caste');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("gender")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your gender');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("type")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter Farmer Type');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("state")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your state');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("district")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your District');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("village")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your village');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("pin")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter pincode');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("ifsc")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter IFSC code');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("acnumber")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter Your account number');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(document.getElementById("bankname")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Enter your bank name');
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
 </head>
+
 <body>
-<div id=bg>
-<h1 id="sa"><i>~~Farmer Corner~~</i></h1>
-<h3 id="ss"><i>Farmer don't just work till the sun goes down.They work till the job gets done</i></h3>
-</div><br>
-<div id="govt"> 
-<h2>Government Policy Available:</h2>
-<i>
-<h3>1.<a href="https://pmfby.gov.in/farmerRegistrationForm">Pradhan mantri fasal bima yojna</a></h3>
-<h3>2.<a href="https://pmkisan.gov.in/">PM-Kisan Samman Nidhi</a></i><br>
-</div><br><br>
-<form>
-<h2>Farmer Registration Form::</h2>
-<h3>Farmer Details:</h3>
-Full Name:
-<input type="text" name="full" id="full">
-<br>
-Relative Name:
-<input type="text" name="relative" id="relative">
-<br>
-Mobile Number:
-<input type="number" name="mobile" id="mobile">
-<br>
-Age:
-<input type="number" name="age" id="age">
-<br>
-Caste:
-<input type="text" name="caste" id="caste">
-<br>
-Gender:
-<input type="text" name="gender" id="gender">
-<br>
-Farmer Type:
-<input type="text" name="type" id="type">
-<br>
-<h3>Residential Details:</h3>
-State:
-<input type="text" name="state" id="state">
-<br>
-District:
-<input type="text" name="district" id="district">
-<br>
-Village:
-<input type="text" name="village" id="village">
-<br>
-Pincode:
-<input type="number" name="pin" id="pin">
-<br>
-<h3>Account Details:</h3>
-Account Number:
-<input type="number" name="acnumber" id="acnumber">
-<br>
-Bank Name:
-<input type="text" name="bankname" id="bankname">
-<br>
-IFSC Code:
-<input type="number" name="ifsc" id="ifsc">
-<br>
-<input type="submit" name="submit" value="submit">
-</form><br>
-<form method="POST" action="http://localhost/weather_update.php">
-<h2>View Weather Forcast:</h2>
-<h4>(Enter city & pincode to check weather Condition)</h4>
-<h3>City:</h3>
-<input type="text" name="city">
-<h3>Pincode:</h3>
-<input type="text" name="pincode">
-  <input type="submit" name="send_message" value="CLICK TO VIEW WEATHER">
- </form>
-<br>
-<h2 id="jp">Thank You!!!</h2>
+  <div id=bg>
+    <h1 id="sa"><i>~~Farmer Corner~~</i></h1>
+    <h3 id="ss"><i>Farmer don't just work till the sun goes down.They work till the job gets done</i></h3>
+  </div><br>
+  <div id="govt">
+    <h2>Government Policy Available:</h2>
+    <i>
+      <h3>1.<a href="https://pmfby.gov.in/farmerRegistrationForm">Pradhan mantri fasal bima yojna</a></h3>
+      <h3>2.<a href="https://pmkisan.gov.in/">PM-Kisan Samman Nidhi</a>
+    </i><br>
+  </div><br><br>
+
+  <!--added form action and method-->
+  <form class="user" action="registration.php" method="post">
+
+    <h2>Farmer Registration Form::</h2>
+    <h3>Farmer Details:</h3>
+    Full Name:
+    <input type="text" name="full" id="full">
+    <br>
+    Relative Name:
+    <input type="text" name="relative" id="relative">
+    <br>
+    Mobile Number:
+    <input type="number" name="mobile" id="mobile">
+    <br>
+    Age:
+    <input type="number" name="age" id="age">
+    <br>
+    Caste:
+    <input type="text" name="caste" id="caste">
+    <br>
+    Gender:
+    <input type="text" name="gender" id="gender">
+    <br>
+    Farmer Type:
+    <input type="text" name="type" id="type">
+    <br>
+    <h3>Residential Details:</h3>
+    State:
+    <input type="text" name="state" id="state">
+    <br>
+    District:
+    <input type="text" name="district" id="district">
+    <br>
+    Village:
+    <input type="text" name="village" id="village">
+    <br>
+    Pincode:
+    <input type="number" name="pin" id="pin">
+    <br>
+    <h3>Account Details:</h3>
+    Account Number:
+    <input type="number" name="acnumber" id="acnumber">
+    <br>
+    Bank Name:
+    <input type="text" name="bankname" id="bankname">
+    <br>
+    IFSC Code:
+    <input type="number" name="ifsc" id="ifsc">
+    <br>
+    <input type="submit" name="Register" value="Register">
+  </form><br>
+  
+  <form method="POST" action="http://localhost/weather_update.php">
+    <h2>View Weather Forcast:</h2>
+    <h4>(Enter city & pincode to check weather Condition)</h4>
+    <h3>City:</h3>
+    <input type="text" name="city">
+    <h3>Pincode:</h3>
+    <input type="text" name="pincode">
+    <input type="submit" name="send_message" value="CLICK TO VIEW WEATHER">
+  </form>
+  <br>
+  <h2 id="jp">Thank You!!!</h2>
 </body>
+
 </html>
