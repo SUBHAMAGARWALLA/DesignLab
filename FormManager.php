@@ -18,7 +18,7 @@ if (isset($_POST['Register'])) {
   $bankname = $_POST['bankname'];
   $ifsc = $_POST['ifsc'];
   // Make sure the submitted registration values are not empty.
-  if (empty($Name) || empty($relative) || empty($mobile) || empty($age) || empty($caste) || empty($gender) || empty($type) || empty($state) || empty($dist) || empty($village) || empty($pin) || empty($acnumber) || empty($bankname) || empty($ifsc)) {
+  if (empty($name) || empty($relative) || empty($mobile) || empty($age) || empty($caste) || empty($gender) || empty($type) || empty($state) || empty($dist) || empty($village) || empty($pin) || empty($acnumber) || empty($bankname) || empty($ifsc)) {
     // One or more values are empty.
     exit('Please complete the registration form');
   } else {
