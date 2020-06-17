@@ -3,7 +3,7 @@ include('db.php');
 include('farmer.php');
 
 if (isset($_POST['Register'])) {
-  $Name = $_POST['full'];
+  $name = $_POST['full'];
   $relative = $_POST['relative'];
   $mobile = $_POST['mobile'];
   $age = $_POST['age'];
@@ -22,7 +22,6 @@ if (isset($_POST['Register'])) {
     // One or more values are empty.
     exit('Please complete the registration form');
   } else {
-
-    save($Name, $relative, $mobile, $age, $caste, $gender, $type, $state, $dist, $village, $pin, $acnumber, $bankname, $ifsc, $con, $UserInsert);
+    save($name, $relative, $mobile, $age, $caste, $gender, $type, $state, $dist, $village, $pin, $acnumber, $bankname, $ifsc, $con);
   }
 }
