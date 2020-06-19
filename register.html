@@ -1,0 +1,143 @@
+<head>
+    <title>Farmer Registration Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("firstname")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter First Name');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("lastname")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter last Name');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("username")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter User Name');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("state")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter State');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("district")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter district');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("pincode")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter pincode');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("password")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('Enter password');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <script>
+        $(document).ready(function () {
+          $(document.getElementById("verifypassword")).hover(function () {
+            var msg = new SpeechSynthesisUtterance('verify password');
+            window.speechSynthesis.speak(msg);
+          }, function () {
+            $(this).css("color", "green");
+          });
+        });
+      </script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+    <body>
+        <div id="registration">
+            <h3 class="text-center text-white pt-5">Registration form</h3>
+            <div class="container">
+                <div id="registration-row" class="row justify-content-center align-items-center">
+                    <div id="registration-column" class="col-md-6">
+                        <div id="registration-box" class="col-md-12">
+                            <form id="registration-form" class="form" action="formManager.php" method="post">
+                                <h3 class="text-center text-info">Registration</h3>
+                                <div class="form-group">
+                                    <label for="firstname" class="text-info">First name:</label><br>
+                                    <input type="text" name="firstname" id="firstname" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="text-info">Last name:</label><br>
+                                    <input type="text" name="lastname" id="lastname" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="username" class="text-info">Username:</label><br>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state" class="text-info">State:</label><br>
+                                    <input type="text" name="state" id="state" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="district" class="text-info">District:</label><br>
+                                    <input type="text" name="district" id="district" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode" class="text-info">Pin Code:</label><br>
+                                    <input type="text" name="pincode" id="pincode" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text-info">Password:</label><br>
+                                    <input type="text" name="password" id="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="verifypassword" class="text-info">Verify Password:</label><br>
+                                    <input type="text" name="verifypassword" id="verifypassword" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="register" class="btn btn-info btn-md" value="Register">
+                                </div>
+                                <div id="login-link" class="text-right">
+                                    <a href="login.html" class="text-info">Back to login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

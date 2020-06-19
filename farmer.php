@@ -1,25 +1,12 @@
 <?php
 
 function save(
-    $name,
-    $relative,
-    $mobile,
-    $age,
-    $caste,
-    $gender,
-    $type,
-    $state,
-    $dist,
-    $village,
-    $pin,
-    $acnumber,
-    $bankname,
-    $ifsc,
-    $con
+    $firstname, $lastname, $username, $state, $district, $pincode, $password, $verifypassword, $con
 ) {
-    $userInsert = "INSERT INTO `users` (`Full Name`, `Relative Name`, `Mobile Number`, `Age`, `Caste`, `Gender`, `Farmer Type`, `State`, `District`, `Village`, `Pincode`, `Account Number`, `Bank Name`, `IFSC`) VALUES ('$name', '$relative', '$mobile', '$age', '$caste', '$gender','$type', '$state', '$dist', '$village', '$pin', '$acnumber', '$bankname', '$ifsc')";
+    $userInsert = "INSERT INTO `users` ('firstname', 'lastname', 'username', 'state', 'district', 'pincode', 'password', 'verifypassword') VALUES ('$firstname', '$lastname', '$username', '$state', '$district', '$pincode', '$password', '$verifypassword')";
     $query_run = mysqli_query($con, $userInsert);
     if ($query_run) {
         echo 'Data Inserted Successfully';
+        header('Location: intermediate.html');
     }
 }
