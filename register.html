@@ -1,86 +1,102 @@
 <head>
     <title>Farmer Registration Page</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("firstname")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter First Name');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("lastname")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter last Name');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("username")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter User Name');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("state")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter State');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("district")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter district');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("pincode")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter pincode');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("password")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('Enter password');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
-    <script>
-        $(document).ready(function () {
-          $(document.getElementById("verifypassword")).hover(function () {
-            var msg = new SpeechSynthesisUtterance('verify password');
-            window.speechSynthesis.speak(msg);
-          }, function () {
-            $(this).css("color", "green");
-          });
-        });
-      </script>
+   <script>
+    $(document).ready(function () {
+      $(document.getElementById("firstname")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Pehla Nam dijiye');
+        msg.lang = 'hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("lastname")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('Upnam dijiye');
+        msg.lang = 'hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("username")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('username dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("state")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('apna rajya ka nam dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("district")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('apna jila ka nam dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("pincode")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('apna pincode dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("password")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('naya password dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function () {
+      $(document.getElementById("verifypassword")).hover(function () {
+        var msg = new SpeechSynthesisUtterance('password wapas dijiye');
+        msg.lang='hi-IN';
+        msg.rate=0.75;
+        window.speechSynthesis.speak(msg);
+      }, function () {
+        $(this).css("color", "green");
+      });
+    });
+  </script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
