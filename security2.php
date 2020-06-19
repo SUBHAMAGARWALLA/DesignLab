@@ -6,8 +6,6 @@
 
     if(!$username) {
         header('Location: login.html');
-    } else {
-        header('Location: intermediate.php');
     }
 
 ?>

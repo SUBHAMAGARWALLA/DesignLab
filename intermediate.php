@@ -1,4 +1,7 @@
+<?php
+  include('security2.php');
 
+?>
 
 <html>  
 <head>
@@ -80,11 +83,18 @@ padding-top: 10px;
                 </div>
             </div>
 
-	<div class="container">
+	<div class="container" style="padding-top: 30px;">
+
+  <center><a href="weather_update.php" class="btn btn-success btn-md">View Weather</a></center>
+
+	</div>
+
+  <!--
             <div id="policy1-row" class="row justify-content-center align-items-center">
                 <div id="policy1-column" class="col-md-6">
                     <div id="policy1-box" class="col-md-12">
-                            <form id="policy1-form" class="form" action="http://localhost/weather_update.php" method="post">
+                            <form id="policy1-form" class="form" action="weather_update.php" method="post">
+
                             <h3 class="text-center text-info">View Weather Forecast</h3>
                     
                             <div class="form-group">
@@ -99,7 +109,11 @@ padding-top: 10px;
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+  
+  -->
+
 </body>
 </html>
